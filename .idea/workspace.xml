@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="" />
+    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Moved Vue project to frontend folder">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/user/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pVUp84iletpiKIXRElucNgU4bY" />
@@ -28,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views" />
       <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend" />
     </key>
   </component>
@@ -35,12 +58,36 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="" />
+      <changelist id="" name="Moved Vue project to frontend folder" comment="" />
       <created>1615267931397</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615267931397</updated>
       <workItem from="1615267933726" duration="488000" />
+      <workItem from="1615268442009" duration="4755000" />
     </task>
+    <task id="LOCAL-00001" summary="Moved Vue project to frontend folder">
+      <created>1615268510995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615268510995</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moved Vue project to frontend folder">
+      <created>1615268535486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615268535486</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Moved Vue project to frontend folder">
+      <created>1615268590260</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615268590260</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -51,10 +98,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="user-login" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Moved Vue project to frontend folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved Vue project to frontend folder" />
   </component>
 </project>
