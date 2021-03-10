@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Created App Bar with conditional Logout button">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/user/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/user/Login.vue" afterDir="false" />
-    </list>
+    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Created App Bar with conditional Logout button" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +111,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/backend" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
