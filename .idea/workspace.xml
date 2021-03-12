@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Created App Bar with conditional Logout button">
+    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Added page navigation buttons to app bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/user/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/user/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="CSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -36,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/views/issuer" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,7 +44,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views\issuer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views\issuer\CertificateRequestTabs" />
       <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views" />
       <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend" />
     </key>
@@ -62,6 +65,8 @@
       <workItem from="1615268442009" duration="9055000" />
       <workItem from="1615361096127" duration="47000" />
       <workItem from="1615376851160" duration="3359000" />
+      <workItem from="1615450432659" duration="6446000" />
+      <workItem from="1615554808246" duration="9182000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Vue project to frontend folder">
       <created>1615268510995</created>
@@ -98,7 +103,49 @@
       <option name="project" value="LOCAL" />
       <updated>1615273391593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created Issuer dashboard page">
+      <created>1615384414079</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615384414079</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created certificate data table component">
+      <created>1615477039254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615477039254</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create tabs for certificate issue request">
+      <created>1615560837139</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615560837139</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added table of unissued certificates to tab">
+      <created>1615563289238</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615563289238</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added table of issued certificates to tab&#10;Refracted file locations to new directory">
+      <created>1615563526722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615563526722</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added page navigation buttons to app bar">
+      <created>1615564078018</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615564078018</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/backend" />
+                        <option value="issuer-dashboard" />
                       </list>
                     </value>
                   </entry>
@@ -132,6 +179,12 @@
     <MESSAGE value="Moved Vue project to frontend folder" />
     <MESSAGE value="Added Vuetify and Router to project" />
     <MESSAGE value="Created App Bar with conditional Logout button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created App Bar with conditional Logout button" />
+    <MESSAGE value="Created Issuer dashboard page" />
+    <MESSAGE value="Created certificate data table component" />
+    <MESSAGE value="Create tabs for certificate issue request" />
+    <MESSAGE value="Added table of unissued certificates to tab" />
+    <MESSAGE value="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
+    <MESSAGE value="Added page navigation buttons to app bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added page navigation buttons to app bar" />
   </component>
 </project>

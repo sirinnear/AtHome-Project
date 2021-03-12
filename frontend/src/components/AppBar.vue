@@ -3,10 +3,22 @@
     <v-img
         contain
         max-width="100px"
+        class="mr-5"
         alt="AtHome logo"
         src="../assets/athome-logo.png" />
+    <v-btn
+        text
+        dark
+        class="white--text"
+        v-if="authenticated"
+        to="/issuer">
+      Certificates
+    </v-btn>
+    <v-btn text dark v-if="authenticated">
+      Transfer Requests
+    </v-btn>
     <v-spacer />
-    <v-btn plain dark v-if="authenticated">
+    <v-btn text dark v-if="authenticated">
       Logout
       <v-icon
           dark
@@ -21,7 +33,7 @@
 <script>
 export default {
   name: "AppBar",
-  props: ['authenticated']
+  props: ['authenticated', 'current']
 }
 </script>
 
