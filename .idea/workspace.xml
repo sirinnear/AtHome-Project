@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Added table of unissued certificates to tab">
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/issuer/CertificateRequestTabs/UnissuedCertTab.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/issuer/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/issuer/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/issuer/UnissuedCertTab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/issuer/CertificateRequestTabs/IssuedCertTab.vue" afterDir="false" />
-    </list>
+    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +41,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views\issuer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views\issuer\CertificateRequestTabs" />
       <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend\src\views" />
       <recent name="C:\Users\Lenovo\Desktop\Blockchain\Project\athome-project\frontend" />
     </key>
@@ -63,7 +63,7 @@
       <workItem from="1615361096127" duration="47000" />
       <workItem from="1615376851160" duration="3359000" />
       <workItem from="1615450432659" duration="6446000" />
-      <workItem from="1615554808246" duration="7453000" />
+      <workItem from="1615554808246" duration="7839000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Vue project to frontend folder">
       <created>1615268510995</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615563289238</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added table of issued certificates to tab&#10;Refracted file locations to new directory">
+      <created>1615563526722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615563526722</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +173,7 @@
     <MESSAGE value="Created certificate data table component" />
     <MESSAGE value="Create tabs for certificate issue request" />
     <MESSAGE value="Added table of unissued certificates to tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added table of unissued certificates to tab" />
+    <MESSAGE value="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
   </component>
 </project>
