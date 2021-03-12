@@ -21,7 +21,7 @@
 import AppBar from '@/components/AppBar';
 
 export default {
-name: "Login",
+  name: "Login",
   components: {
   AppBar,
   },
