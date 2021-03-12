@@ -12,6 +12,7 @@
             <UnissuedCertTab />
           </v-tab-item>
           <v-tab-item>
+            <IssuedCertTab />
           </v-tab-item>
         </v-tabs-items>
       </v-container>
@@ -21,11 +22,13 @@
 
 <script>
 import AppBar from '@/components/AppBar';
-import UnissuedCertTab from "@/views/issuer/UnissuedCertTab";
+import UnissuedCertTab from "@/views/issuer/CertificateRequestTabs/UnissuedCertTab";
+import IssuedCertTab from "@/views/issuer/CertificateRequestTabs/IssuedCertTab";
 
 export default {
   name: "Dashboard",
   components: {
+    IssuedCertTab,
     AppBar,
     UnissuedCertTab
   },
