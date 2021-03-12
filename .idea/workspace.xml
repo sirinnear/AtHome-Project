@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
+    <list default="true" id="b8dc6bd1-511f-4058-82f5-376508c9c5f4" name="Default Changelist" comment="Added page navigation buttons to app bar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +66,7 @@
       <workItem from="1615361096127" duration="47000" />
       <workItem from="1615376851160" duration="3359000" />
       <workItem from="1615450432659" duration="6446000" />
-      <workItem from="1615554808246" duration="7839000" />
+      <workItem from="1615554808246" duration="9182000" />
     </task>
     <task id="LOCAL-00001" summary="Moved Vue project to frontend folder">
       <created>1615268510995</created>
@@ -135,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615563526722</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added page navigation buttons to app bar">
+      <created>1615564078018</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615564078018</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +184,7 @@
     <MESSAGE value="Create tabs for certificate issue request" />
     <MESSAGE value="Added table of unissued certificates to tab" />
     <MESSAGE value="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added table of issued certificates to tab&#10;Refracted file locations to new directory" />
+    <MESSAGE value="Added page navigation buttons to app bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added page navigation buttons to app bar" />
   </component>
 </project>
