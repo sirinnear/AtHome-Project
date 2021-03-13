@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import IssuerCert from '../views/issuer/CertificateTables.vue'
 import IssuerTransfer from '../views/issuer/TransferRequests.vue'
+import AdminCert from '../views/admin/IssueCertificateRequests'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,11 @@ const routes = [
     path: '/issuer/transfers',
     name: 'IssuerTransfer',
     component: IssuerTransfer
+  },
+  {
+    path: '/admin',
+    name: 'AdminCert',
+    component: AdminCert
   },
 ]
 
