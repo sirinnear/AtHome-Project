@@ -10,18 +10,28 @@
             :items-per-page="5"
             show-select
             :single-select=false
-            item-key="certificationID"
+            item-key="certificateID"
             class="elevation-1 text-left">
           <template v-slot:top>
             <v-toolbar flat dense>
-              <v-btn text dense color="#ea292f" v-if="selected.length > 0">
-                <v-icon
-                    left
-                >
-                  mdi-check
-                </v-icon>
-                Approve Selected
-              </v-btn>
+              <div v-if="selected.length > 0">
+                <v-btn text dense color="#ea292f">
+                  <v-icon
+                      left
+                  >
+                    mdi-check
+                  </v-icon>
+                  Issue Selected
+                </v-btn>
+                <v-btn text dense color="#ea292f">
+                  <v-icon
+                      left
+                  >
+                    mdi-cancel
+                  </v-icon>
+                  Reject Selected
+                </v-btn>
+              </div>
             </v-toolbar>
           </template>
         </v-data-table>
