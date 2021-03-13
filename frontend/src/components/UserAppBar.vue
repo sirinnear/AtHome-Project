@@ -20,7 +20,7 @@
         class="white--text"
         v-if="authenticated"
         to="/issuer/transfers">
-      Transfer Requests
+      Request Transfer
     </v-btn>
     <v-spacer />
     <v-btn text dark v-if="authenticated">
