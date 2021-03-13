@@ -10,7 +10,7 @@
             :items-per-page="5"
             show-select
             :single-select=false
-            item-key="userID"
+            item-key="certificationID"
             class="elevation-1 text-left">
           <template v-slot:top>
             <v-toolbar flat dense>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import AppBar from '@/components/AppBar';
+import AppBar from '@/components/AdminAppBar';
 
 export default {
   name: "CertificateTables",
@@ -69,31 +69,37 @@ export default {
         {
           user: 'C',
           certificate: 'MUIDS',
+          issuer: 'MUIDS',
           certificateID: 3,
         },
         {
           user: 'D',
           certificate: 'MUIDS',
+          issuer: 'MUIDS',
           certificateID: 4,
         },
         {
           user: 'A',
           certificate: 'MUIC',
+          issuer: 'MUIC',
           certificateID: 5,
         },
         {
           user: 'B',
           certificate: 'MUIC',
+          issuer: 'MUIC',
           certificateID: 6,
         },
         {
           user: 'C',
           certificate: 'MUIDS',
+          issuer: 'MUIDS',
           certificateID: 7,
         },
         {
           user: 'D',
           certificate: 'MUIDS',
+          issuer: 'MUIDS',
           certificateID: 8,
         },
       ],
