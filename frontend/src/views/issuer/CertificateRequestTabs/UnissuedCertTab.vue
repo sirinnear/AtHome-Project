@@ -9,6 +9,18 @@
         :single-select=false
         item-key="name"
         class="elevation-1 text-left">
+      <template v-slot:top>
+        <v-toolbar flat dense>
+          <v-btn text dense color="#ea292f" v-if="selected.length > 0">
+            <v-icon
+                left
+            >
+              mdi-export
+            </v-icon>
+            Export Selected
+          </v-btn>
+        </v-toolbar>
+      </template>
     </v-data-table>
   </v-container>
 </template>
