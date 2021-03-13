@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
-import IssuerCert from '../views/issuer/CertificateTables.vue'
+import IssuerCert from '../views/issuer/IssuerCertificateTable.vue'
 import IssuerTransfer from '../views/issuer/TransferRequests.vue'
 import AdminCert from '../views/admin/IssueCertificateRequests'
 import UserCert from '../views/user/CertificateTable'
