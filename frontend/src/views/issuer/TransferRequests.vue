@@ -26,7 +26,7 @@ import UnissuedCertTab from "@/views/issuer/CertificateRequestTabs/UnissuedCertT
 import IssuedCertTab from "@/views/issuer/CertificateRequestTabs/IssuedCertTab";
 
 export default {
-  name: "Dashboard",
+  name: "TransferRequests",
   components: {
     IssuedCertTab,
     AppBar,
