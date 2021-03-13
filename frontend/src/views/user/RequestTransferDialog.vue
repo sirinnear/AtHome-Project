@@ -16,7 +16,7 @@
       </v-btn>
     </template>
     <v-card>
-      <v-card-title>
+      <v-card-title class="card-title">
         <span class="headline">Request Transfer</span>
       </v-card-title>
       <v-card-text>
@@ -30,14 +30,14 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
-            color="blue darken-1"
+            color="grey"
             text
             @click="dialog = false"
         >
           Close
         </v-btn>
         <v-btn
-            color="blue darken-1"
+            color="#ea292f"
             text
             @click="dialog = false"
         >
@@ -58,5 +58,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .card-title {
+    background-color: #ea292f;
+    color: #fff;
+  }
 </style>
