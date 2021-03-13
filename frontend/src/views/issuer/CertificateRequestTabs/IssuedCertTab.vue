@@ -16,28 +16,28 @@ export default {
     return {
       headers: [
         {
-          text: 'Certificate',
+          text: 'User',
           align: 'start',
-          value: 'name',
+          value: 'user',
         },
-        {text: 'Issuer', value: 'issuer'},
+        {text: 'Certificate', value: 'certificate'},
       ],
       certificates: [
         {
-          name: 'A',
-          issuer: 'MUIC',
+          user: 'A',
+          certificate: 'MUIC',
         },
         {
-          name: 'B',
-          issuer: 'MUIC',
+          user: 'B',
+          certificate: 'MUIC',
         },
         {
-          name: 'C',
-          issuer: 'MUIDS',
+          user: 'C',
+          certificate: 'MUIDS',
         },
         {
-          name: 'D',
-          issuer: 'MUIDS',
+          user: 'D',
+          certificate: 'MUIDS',
         },
       ],
     }
