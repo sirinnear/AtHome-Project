@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import AppBar from '@/components/AppBar';
+import AppBar from '@/components/IssuerAppBar';
 
 export default {
   name: "Login",
