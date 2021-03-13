@@ -22,6 +22,7 @@
         to="/issuer/transfers">
       Request Transfer
     </v-btn>
+    <RequestTransferDialog v-if="authenticated" />
     <v-spacer />
     <v-btn text dark v-if="authenticated">
       Logout
@@ -36,8 +37,10 @@
 </template>
 
 <script>
+import RequestTransferDialog from "@/views/user/RequestTransferDialog";
 export default {
   name: "AppBar",
+  components: {RequestTransferDialog},
   props: ['authenticated', 'current']
 }
 </script>
