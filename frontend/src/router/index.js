@@ -6,7 +6,7 @@ import Login from '../views/Login.vue'
 import IssuerCert from '../views/issuer/IssuerCertificateTable.vue'
 import IssuerTransfer from '../views/issuer/TransferRequests.vue'
 import AdminCert from '../views/admin/IssueCertificateRequests'
-import UserCert from '../views/user/CertificateTable'
+import UserCert from '../views/user/UserCertificateTable'
 
 Vue.use(VueRouter)
 
