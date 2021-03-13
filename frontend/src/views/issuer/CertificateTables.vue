@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import AppBar from '@/components/AppBar';
+import AppBar from '@/components/IssuerAppBar';
 import UnissuedCertTab from "@/views/issuer/CertificateRequestTabs/UnissuedCertTab";
 import IssuedCertTab from "@/views/issuer/CertificateRequestTabs/IssuedCertTab";
 
