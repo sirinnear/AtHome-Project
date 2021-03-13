@@ -11,10 +11,15 @@
         dark
         class="white--text"
         v-if="authenticated"
-        to="/issuer">
+        to="/issuer/certificates">
       Certificates
     </v-btn>
-    <v-btn text dark v-if="authenticated">
+    <v-btn
+        text
+        dark
+        class="white--text"
+        v-if="authenticated"
+        to="/issuer/transfers">
       Transfer Requests
     </v-btn>
     <v-spacer />

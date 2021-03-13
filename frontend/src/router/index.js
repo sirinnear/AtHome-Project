@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
-import Issuer from '../views/issuer/Dashboard.vue'
+import IssuerCert from '../views/issuer/CertificateTables.vue'
+import IssuerTransfer from '../views/issuer/TransferRequests.vue'
 
 Vue.use(VueRouter)
 
@@ -27,9 +28,14 @@ const routes = [
     component: Login
   },
   {
-    path: '/issuer',
-    name: 'Issuer',
-    component: Issuer
+    path: '/issuer/certificates',
+    name: 'IssuerCert',
+    component: IssuerCert
+  },
+  {
+    path: '/issuer/transfers',
+    name: 'IssuerTransfer',
+    component: IssuerTransfer
   },
 ]
 
