@@ -15,9 +15,9 @@
             <v-icon
                 left
             >
-              mdi-export
+              mdi-note-text-outline
             </v-icon>
-            Export Selected
+            Request Selected
           </v-btn>
         </v-toolbar>
       </template>
