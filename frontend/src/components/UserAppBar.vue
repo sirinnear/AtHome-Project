@@ -11,7 +11,7 @@
         dark
         class="white--text"
         v-if="authenticated"
-        to="/issuer/certificates">
+        to="/user">
       Certificates
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
