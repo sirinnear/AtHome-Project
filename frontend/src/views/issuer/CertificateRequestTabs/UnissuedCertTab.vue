@@ -7,7 +7,7 @@
         :items-per-page="5"
         show-select
         :single-select=false
-        item-key="name"
+        item-key="certificateID"
         class="elevation-1 text-left">
       <template v-slot:top>
         <v-toolbar flat dense>
@@ -33,28 +33,52 @@ export default {
       selected: [],
       headers: [
         {
-          text: 'Certificate',
+          text: 'User',
           align: 'start',
-          value: 'name',
+          value: 'user',
         },
-        {text: 'Issuer', value: 'issuer'},
+        {text: 'Certificate', value: 'certificate'},
       ],
       certificates: [
         {
-          name: 'A',
-          issuer: 'MUIC',
+          user: 'A',
+          certificate: 'MUIC',
+          certificateID: 1,
         },
         {
-          name: 'B',
-          issuer: 'MUIC',
+          user: 'B',
+          certificate: 'MUIC',
+          certificateID: 2,
         },
         {
-          name: 'C',
-          issuer: 'MUIDS',
+          user: 'C',
+          certificate: 'MUIDS',
+          certificateID: 3,
         },
         {
-          name: 'D',
-          issuer: 'MUIDS',
+          user: 'D',
+          certificate: 'MUIDS',
+          certificateID: 4,
+        },
+        {
+          user: 'A',
+          certificate: 'MUIC',
+          certificateID: 5,
+        },
+        {
+          user: 'B',
+          certificate: 'MUIC',
+          certificateID: 6,
+        },
+        {
+          user: 'C',
+          certificate: 'MUIDS',
+          certificateID: 7,
+        },
+        {
+          user: 'D',
+          certificate: 'MUIDS',
+          certificateID: 8,
         },
       ],
     }
