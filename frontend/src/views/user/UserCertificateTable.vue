@@ -53,42 +53,42 @@ export default {
       ],
       certificates: [
         {
-          certificate: 'MUIC',
+          certificate: 'Certificate 1',
           issuer: 'MUIC',
           certificateID: 1,
         },
         {
-          certificate: 'MUIC',
+          certificate: 'Certificate 2',
           issuer: 'MUIC',
           certificateID: 2,
         },
         {
-          certificate: 'MUIDS',
+          certificate: 'Certificate 3',
           issuer: 'MUIDS',
           certificateID: 3,
         },
         {
-          certificate: 'MUIDS',
+          certificate: 'Certificate 4',
           issuer: 'MUIDS',
           certificateID: 4,
         },
         {
-          certificate: 'MUIC',
+          certificate: 'Certificate 5',
           issuer: 'MUIC',
           certificateID: 5,
         },
         {
-          certificate: 'MUIC',
+          certificate: 'Certificate 6',
           issuer: 'MUIC',
           certificateID: 6,
         },
         {
-          certificate: 'MUIDS',
+          certificate: 'Certificate 7',
           issuer: 'MUIDS',
           certificateID: 7,
         },
         {
-          certificate: 'MUIDS',
+          certificate: 'Certificate 8',
           issuer: 'MUIDS',
           certificateID: 8,
         },
