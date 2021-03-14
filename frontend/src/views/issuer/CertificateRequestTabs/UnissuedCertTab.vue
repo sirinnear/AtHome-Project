@@ -42,42 +42,42 @@ export default {
       certificates: [
         {
           user: 'A',
-          certificate: 'MUIC',
+          certificate: 'Certificate 1',
           certificateID: 1,
         },
         {
           user: 'B',
-          certificate: 'MUIC',
+          certificate: 'Certificate 2',
           certificateID: 2,
         },
         {
           user: 'C',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 3',
           certificateID: 3,
         },
         {
           user: 'D',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 4',
           certificateID: 4,
         },
         {
           user: 'A',
-          certificate: 'MUIC',
+          certificate: 'Certificate 5',
           certificateID: 5,
         },
         {
           user: 'B',
-          certificate: 'MUIC',
+          certificate: 'Certificate 6',
           certificateID: 6,
         },
         {
           user: 'C',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 7',
           certificateID: 7,
         },
         {
           user: 'D',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 8',
           certificateID: 8,
         },
       ],
@@ -85,7 +85,8 @@ export default {
   },
   methods: {
     deleteSelected() {
-      this.certificates = this.certificates.filter(r => this.selected.indexOf(r) < 0)
+      this.certificates = this.certificates.filter(r => this.selected.indexOf(r) < 0);
+      this.selected = [];
     }
   }
 }

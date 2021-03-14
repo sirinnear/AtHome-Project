@@ -25,19 +25,19 @@ export default {
       certificates: [
         {
           user: 'A',
-          certificate: 'MUIC',
+          certificate: 'Certificate 9',
         },
         {
           user: 'B',
-          certificate: 'MUIC',
+          certificate: 'Certificate 10',
         },
         {
           user: 'C',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 11',
         },
         {
           user: 'D',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 12',
         },
       ],
     }
