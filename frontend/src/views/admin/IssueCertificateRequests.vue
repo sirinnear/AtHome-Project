@@ -15,7 +15,7 @@
           <template v-slot:top>
             <v-toolbar flat dense>
               <div v-if="selected.length > 0">
-                <v-btn text dense color="#ea292f">
+                <v-btn text dense color="#ea292f" @click="deleteSelected">
                   <v-icon
                       left
                   >
@@ -23,7 +23,7 @@
                   </v-icon>
                   Issue Selected
                 </v-btn>
-                <v-btn text dense color="#ea292f">
+                <v-btn text dense color="#ea292f" @click="deleteSelected">
                   <v-icon
                       left
                   >
@@ -66,53 +66,59 @@ export default {
       certificates: [
         {
           user: 'A',
-          certificate: 'MUIC',
+          certificate: 'Certificate 1',
           issuer: 'MUIC',
           certificateID: 1,
         },
         {
           user: 'B',
-          certificate: 'MUIC',
+          certificate: 'Certificate 2',
           issuer: 'MUIC',
           certificateID: 2,
         },
         {
           user: 'C',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 3',
           issuer: 'MUIDS',
           certificateID: 3,
         },
         {
           user: 'D',
-          certificate: 'MUIDS',
+          certificate: 'Certificate 4',
           issuer: 'MUIDS',
           certificateID: 4,
         },
         {
-          user: 'A',
-          certificate: 'MUIC',
+          user: 'E',
+          certificate: 'Certificate 5',
           issuer: 'MUIC',
           certificateID: 5,
         },
         {
-          user: 'B',
-          certificate: 'MUIC',
+          user: 'F',
+          certificate: 'Certificate 6',
           issuer: 'MUIC',
           certificateID: 6,
         },
         {
-          user: 'C',
-          certificate: 'MUIDS',
+          user: 'G',
+          certificate: 'Certificate 7',
           issuer: 'MUIDS',
           certificateID: 7,
         },
         {
-          user: 'D',
-          certificate: 'MUIDS',
+          user: 'H',
+          certificate: 'Certificate 8',
           issuer: 'MUIDS',
           certificateID: 8,
         },
       ],
+    }
+  },
+  methods: {
+    deleteSelected() {
+      this.certificates = this.certificates.filter(r => this.selected.indexOf(r) < 0);
+      this.selected = [];
     }
   },
 }
