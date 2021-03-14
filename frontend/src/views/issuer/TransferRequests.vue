@@ -74,22 +74,22 @@ export default {
           organization: 'MUIDS',
         },
         {
-          user: 'A',
+          user: 'E',
           userID: 5,
           organization: 'MUIC',
         },
         {
-          user: 'B',
+          user: 'F',
           userID: 6,
           organization: 'MUIC',
         },
         {
-          user: 'C',
+          user: 'G',
           userID: 7,
           organization: 'MUIDS',
         },
         {
-          user: 'D',
+          user: 'H',
           userID: 8,
           organization: 'MUIDS',
         },
