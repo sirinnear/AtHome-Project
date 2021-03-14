@@ -14,7 +14,7 @@
             class="elevation-1 text-left">
           <template v-slot:top>
             <v-toolbar flat dense>
-              <v-btn text dense color="#ea292f" v-if="selected.length > 0">
+              <v-btn text dense color="#ea292f" v-if="selected.length > 0" @click="clearSelected">
                 <v-icon
                     left
                 >
@@ -95,6 +95,11 @@ export default {
       ],
     }
   },
+  methods: {
+    clearSelected() {
+      this.selected = [];
+    }
+  }
 }
 </script>
 
