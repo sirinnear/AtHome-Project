@@ -98,7 +98,8 @@ export default {
   },
   methods: {
     deleteSelected() {
-      this.requests = this.requests.filter(r => this.selected.indexOf(r) < 0)
+      this.requests = this.requests.filter(r => this.selected.indexOf(r) < 0);
+      this.selected = [];
     }
   }
 }
