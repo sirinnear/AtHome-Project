@@ -16,7 +16,7 @@
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
     <v-spacer />
-    <v-btn text dark v-if="authenticated">
+    <v-btn text dark v-if="authenticated" to="/login">
       Logout
       <v-icon
           dark
