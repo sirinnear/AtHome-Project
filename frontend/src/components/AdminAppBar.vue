@@ -15,7 +15,7 @@
       Issue Certificates
     </v-btn>
     <v-spacer />
-    <v-btn text dark v-if="authenticated">
+    <v-btn text dark v-if="authenticated" to="/login">
       Logout
       <v-icon
           dark
