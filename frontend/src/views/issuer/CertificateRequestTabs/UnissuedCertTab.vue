@@ -11,7 +11,7 @@
         class="elevation-1 text-left">
       <template v-slot:top>
         <v-toolbar flat dense>
-          <v-btn text dense color="#ea292f" v-if="selected.length > 0">
+          <v-btn text dense color="#ea292f" v-if="selected.length > 0" @click="deleteSelected">
             <v-icon
                 left
             >
@@ -81,6 +81,11 @@ export default {
           certificateID: 8,
         },
       ],
+    }
+  },
+  methods: {
+    deleteSelected() {
+      this.certificates = this.certificates.filter(r => this.selected.indexOf(r) < 0)
     }
   }
 }
