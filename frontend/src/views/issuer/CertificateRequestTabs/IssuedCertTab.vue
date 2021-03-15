@@ -16,28 +16,28 @@ export default {
     return {
       headers: [
         {
-          text: 'User',
+          text: 'Student',
           align: 'start',
-          value: 'user',
+          value: 'student',
         },
         {text: 'Certificate', value: 'certificate'},
       ],
       certificates: [
         {
-          user: 'A',
-          certificate: 'Certificate 9',
+          student: 'Bay Leaf',
+          certificate: 'Honors certificate',
         },
         {
-          user: 'B',
-          certificate: 'Certificate 10',
+          student: 'Sand Witch',
+          certificate: 'Cooking competition',
         },
         {
-          user: 'C',
-          certificate: 'Certificate 11',
+          student: 'John Lee',
+          certificate: 'Sports competition',
         },
         {
-          user: 'D',
-          certificate: 'Certificate 12',
+          student: 'Abra Cadabra',
+          certificate: 'Talent show contest',
         },
       ],
     }
