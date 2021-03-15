@@ -23,6 +23,17 @@
       Transfer Requests
     </v-btn>
     <v-spacer />
+    <v-row align="center" justify="center" no-gutters>
+      <v-spacer />
+      <v-col cols="1">
+        <v-avatar>
+          <img src="../assets/muic-logo.png" alt="MUIC Logo">
+        </v-avatar>
+      </v-col>
+      <v-col>
+        <span class="white--text">MUIC</span>
+      </v-col>
+    </v-row>
     <v-btn text dark v-if="authenticated" to="/login">
       Logout
       <v-icon

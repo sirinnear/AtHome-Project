@@ -16,6 +16,19 @@
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
     <v-spacer />
+    <v-row align="center" justify="center" no-gutters>
+      <v-spacer />
+      <v-col cols="1">
+        <v-avatar>
+          <v-icon dark x-large>
+            mdi-account-circle
+          </v-icon>
+        </v-avatar>
+      </v-col>
+      <v-col>
+        <span class="white--text">Student 1</span>
+      </v-col>
+    </v-row>
     <v-btn text dark v-if="authenticated" to="/login">
       Logout
       <v-icon
