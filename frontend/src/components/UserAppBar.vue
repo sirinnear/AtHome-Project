@@ -26,7 +26,7 @@
         </v-avatar>
       </v-col>
       <v-col>
-        <span class="white--text">Student 1</span>
+        <span class="white--text">John Lee</span>
       </v-col>
     </v-row>
     <v-btn text dark v-if="authenticated" to="/login">
