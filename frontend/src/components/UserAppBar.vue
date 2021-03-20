@@ -16,7 +16,7 @@
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
     <v-spacer />
-    <v-row align="center" justify="center" no-gutters>
+    <v-row align="center" justify="center" no-gutters v-if="authenticated">
       <v-spacer />
       <v-col cols="1">
         <v-avatar>
