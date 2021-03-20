@@ -53,42 +53,42 @@ export default {
       ],
       certificates: [
         {
-          certificate: 'Certificate 1',
+          certificate: 'Math competition',
           issuer: 'MUIC',
           certificateID: 1,
         },
         {
-          certificate: 'Certificate 2',
+          certificate: 'Honors certificate',
           issuer: 'MUIC',
           certificateID: 2,
         },
         {
-          certificate: 'Certificate 3',
+          certificate: 'Graduation certificate',
           issuer: 'MUIDS',
           certificateID: 3,
         },
         {
-          certificate: 'Certificate 4',
+          certificate: 'Honors certificate',
           issuer: 'MUIDS',
           certificateID: 4,
         },
         {
-          certificate: 'Certificate 5',
+          certificate: 'Sports competition',
           issuer: 'MUIC',
           certificateID: 5,
         },
         {
-          certificate: 'Certificate 6',
+          certificate: 'Math competition',
           issuer: 'MUIC',
           certificateID: 6,
         },
         {
-          certificate: 'Certificate 7',
+          certificate: 'Math competition',
           issuer: 'MUIDS',
           certificateID: 7,
         },
         {
-          certificate: 'Certificate 8',
+          certificate: 'Honors certificate',
           issuer: 'MUIDS',
           certificateID: 8,
         },
