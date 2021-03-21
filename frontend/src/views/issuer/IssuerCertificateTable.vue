@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppBar :authenticated=true />
+    <AppBar :authenticated=true :name="this.$route.params.name" />
     <v-content>
       <v-container>
         <v-tabs v-model="tab" centered>

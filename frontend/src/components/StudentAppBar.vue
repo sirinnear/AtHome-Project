@@ -11,7 +11,7 @@
         dark
         class="white--text"
         v-if="authenticated"
-        to="/user">
+        to="/student">
       Certificates
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
@@ -26,7 +26,7 @@
         </v-avatar>
       </v-col>
       <v-col>
-        <span class="white--text">John Lee</span>
+        <span class="white--text">{{ name }}</span>
       </v-col>
     </v-row>
     <v-btn text dark v-if="authenticated" to="/login">
@@ -46,7 +46,7 @@ import RequestTransferDialog from "@/views/student/RequestTransferDialog";
 export default {
   name: "AppBar",
   components: {RequestTransferDialog},
-  props: ['authenticated', 'current']
+  props: ['authenticated', 'name']
 }
 </script>
 

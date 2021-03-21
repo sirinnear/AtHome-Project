@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+module.exports = router;
+const certificatesCtrl = require('../controllers/certificates');
+router.post('/', certificatesCtrl.createCert);
+router.get('/:verify', certificatesCtrl.verifyCert);
+router.delete('/:name', certificatesCtrl.deleteCert);
+router.get('/:name', certificatesCtrl.getCertByName);
+router.get('/:varify', certificatesCtrl.getCertByStatus);
+module.exports = router;

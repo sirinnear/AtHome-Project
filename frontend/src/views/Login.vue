@@ -47,10 +47,11 @@ export default {
         .then((response) => {
           const role = response.data.role;
           if (role === 'student') {
-            this.$router.push('/student')
+            this.$router.push({ name: 'StudentCert', params: {name: response.data.name}});
+            console.log(response.data.name);
           }
           else if (role === 'issuer') {
-            this.$router.push('/issuer/certificates')
+            this.$router.push({ name: 'IssuerCert', params: {name: response.data.name}})
           }
           else if (role === 'admin') {
             this.$router.push('/admin')

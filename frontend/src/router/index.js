@@ -5,7 +5,7 @@ import Login from '../views/Login.vue'
 import IssuerCert from '../views/issuer/IssuerCertificateTable.vue'
 import IssuerTransfer from '../views/issuer/TransferRequests.vue'
 import AdminCert from '../views/admin/IssueCertificateRequests'
-import StudentCert from '../views/student/UserCertificateTable'
+import StudentCert from '../views/student/StudentCertificateTable'
 
 Vue.use(VueRouter)
 
@@ -30,22 +30,26 @@ const routes = [
   {
     path: '/issuer/certificates',
     name: 'IssuerCert',
-    component: IssuerCert
+    component: IssuerCert,
+    props: true,
   },
   {
     path: '/issuer/transfers',
     name: 'IssuerTransfer',
-    component: IssuerTransfer
+    component: IssuerTransfer,
+    props: true,
   },
   {
     path: '/admin',
     name: 'AdminCert',
-    component: AdminCert
+    component: AdminCert,
+    props: true,
   },
   {
     path: '/student',
     name: 'StudentCert',
-    component: StudentCert
+    component: StudentCert,
+    props: true
   },
 ]
 

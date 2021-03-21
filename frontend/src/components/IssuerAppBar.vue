@@ -31,7 +31,7 @@
         </v-avatar>
       </v-col>
       <v-col>
-        <span class="white--text">MUIC</span>
+        <span class="white--text">{{ name }}</span>
       </v-col>
     </v-row>
     <v-btn text dark v-if="authenticated" to="/login">
@@ -49,7 +49,7 @@
 <script>
 export default {
   name: "AppBar",
-  props: ['authenticated', 'current']
+  props: ['authenticated', 'name']
 }
 </script>
 
