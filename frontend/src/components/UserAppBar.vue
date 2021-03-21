@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import RequestTransferDialog from "@/views/user/RequestTransferDialog";
+import RequestTransferDialog from "@/views/student/RequestTransferDialog";
 export default {
   name: "AppBar",
   components: {RequestTransferDialog},

@@ -45,10 +45,22 @@ export default {
       };
       api.login(data)
         .then((response) => {
-          console.log(response);
+          const role = response.data.role;
+          if (role === 'student') {
+            this.$router.push('/student')
+          }
+          else if (role === 'issuer') {
+            this.$router.push('/issuer/certificates')
+          }
+          else if (role === 'admin') {
+            this.$router.push('/admin')
+          }
+          else {
+            alert('There exists no such user role!')
+          }
         })
         .catch((e) => {
-          console.log(e.response);
+          alert(e.response.data.error);
         });
     }
   }
