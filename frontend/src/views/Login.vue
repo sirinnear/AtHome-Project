@@ -8,9 +8,9 @@
           max-width="50%">
         <v-card-title class="justify-center text-h5">Login</v-card-title>
         <v-container class="px-10 py-5">
-          <v-text-field outlined label="Email" type="email"/>
-          <v-text-field outlined label="Password" type="password"/>
-          <v-btn dark color="#ea292f">Login</v-btn>
+          <v-text-field v-model="user.email" outlined label="Email" type="email"/>
+          <v-text-field v-model="user.password" outlined label="Password" type="password"/>
+          <v-btn dark color="#ea292f" @click="login">Login</v-btn>
         </v-container>
       </v-card>
     </v-content>
@@ -19,6 +19,7 @@
 
 <script>
 import AppBar from '@/components/IssuerAppBar';
+import api from '@/services';
 
 export default {
   name: "Login",
@@ -28,6 +29,29 @@ export default {
   props: {
   authenticated: Boolean,
   },
+  data () {
+    return {
+      user: {
+        email: '',
+        password: '',
+      }
+    }
+  },
+  methods: {
+    login () {
+      const data = {
+        email: this.user.email,
+        password: this.user.password,
+      };
+      api.login(data)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((e) => {
+          console.log(e.response);
+        });
+    }
+  }
 }
 </script>
 
