@@ -34,7 +34,7 @@
         <span class="white--text">{{ name }}</span>
       </v-col>
     </v-row>
-    <v-btn text dark v-if="authenticated" to="/login">
+    <v-btn text dark v-if="authenticated" @click="logout">
       Logout
       <v-icon
           dark
@@ -47,9 +47,17 @@
 </template>
 
 <script>
+import api from "@/services";
+
 export default {
   name: "AppBar",
-  props: ['authenticated', 'name']
+  props: ['authenticated', 'name'],
+  methods: {
+    logout() {
+      api.logout();
+      this.$router.push('/login');
+    }
+  }
 }
 </script>
 

@@ -43,26 +43,26 @@ export default {
         email: this.user.email,
         password: this.user.password,
       };
-      api.login(data)
-        .then((response) => {
-          const role = response.data.role;
-          if (role === 'student') {
-            this.$router.push({ name: 'StudentCert', params: {name: response.data.name}});
-            console.log(response.data.name);
+      api.login(data).then(
+          () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            const role = user.role;
+            const name = user.name;
+            if (role === 'student') {
+              this.$router.push({ name: 'StudentCert', params: {name: name}});
+            }
+            else if (role === 'issuer') {
+              this.$router.push({ name: 'IssuerCert', params: {name: name}})
+            }
+            else if (role === 'admin') {
+              this.$router.push('/admin')
+            }
+            else {
+              alert('There exists no such user role!')
+            }
           }
-          else if (role === 'issuer') {
-            this.$router.push({ name: 'IssuerCert', params: {name: response.data.name}})
-          }
-          else if (role === 'admin') {
-            this.$router.push('/admin')
-          }
-          else {
-            alert('There exists no such user role!')
-          }
-        })
-        .catch((e) => {
-          alert(e.response.data.error);
-        });
+      );
+
     }
   }
 }
