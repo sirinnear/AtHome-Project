@@ -47,12 +47,11 @@ export default {
           () => {
             const user = JSON.parse(localStorage.getItem('user'));
             const role = user.role;
-            const name = user.name;
             if (role === 'student') {
-              this.$router.push({ name: 'StudentCert', params: {name: name}});
+              this.$router.push('/student');
             }
             else if (role === 'issuer') {
-              this.$router.push({ name: 'IssuerCert', params: {name: name}})
+              this.$router.push('/issuer/certificates')
             }
             else if (role === 'admin') {
               this.$router.push('/admin')

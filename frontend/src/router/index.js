@@ -31,25 +31,21 @@ const routes = [
     path: '/issuer/certificates',
     name: 'IssuerCert',
     component: IssuerCert,
-    props: true,
   },
   {
     path: '/issuer/transfers',
     name: 'IssuerTransfer',
     component: IssuerTransfer,
-    props: true,
   },
   {
     path: '/admin',
     name: 'AdminCert',
     component: AdminCert,
-    props: true,
   },
   {
     path: '/student',
     name: 'StudentCert',
     component: StudentCert,
-    props: true
   },
 ]
 

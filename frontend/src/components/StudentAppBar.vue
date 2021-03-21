@@ -48,12 +48,21 @@ import api from '../services';
 export default {
   name: "AppBar",
   components: {RequestTransferDialog},
-  props: ['authenticated', 'name'],
+  props: ['authenticated'],
+  data () {
+    return {
+      name: '',
+    }
+  },
   methods: {
     logout() {
       api.logout();
       this.$router.push('/login');
     }
+  },
+  mounted() {
+    const user = JSON.parse(localStorage.getItem('user'));
+    this.name = user.name;
   }
 }
 </script>
