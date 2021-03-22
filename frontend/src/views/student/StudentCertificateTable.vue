@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppBar :authenticated=true />
+    <AppBar :authenticated=true :name="this.$route.params.name" />
     <v-content>
       <v-container>
         <v-data-table
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import AppBar from '@/components/UserAppBar';
+import AppBar from '@/components/StudentAppBar';
 
 export default {
   name: "CertificateTables",
@@ -40,6 +40,7 @@ export default {
   },
   props: {
     authenticated: Boolean,
+    name: String,
   },
   data () {
     return {

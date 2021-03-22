@@ -5,14 +5,13 @@ import Login from '../views/Login.vue'
 import IssuerCert from '../views/issuer/IssuerCertificateTable.vue'
 import IssuerTransfer from '../views/issuer/TransferRequests.vue'
 import AdminCert from '../views/admin/IssueCertificateRequests'
-import UserCert from '../views/user/UserCertificateTable'
+import StudentCert from '../views/student/StudentCertificateTable'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
     redirect: '/login'
   },
   // {
@@ -31,27 +30,40 @@ const routes = [
   {
     path: '/issuer/certificates',
     name: 'IssuerCert',
-    component: IssuerCert
+    component: IssuerCert,
   },
   {
     path: '/issuer/transfers',
     name: 'IssuerTransfer',
-    component: IssuerTransfer
+    component: IssuerTransfer,
   },
   {
     path: '/admin',
     name: 'AdminCert',
-    component: AdminCert
+    component: AdminCert,
   },
   {
-    path: '/user',
-    name: 'UserCert',
-    component: UserCert
+    path: '/student',
+    name: 'StudentCert',
+    component: StudentCert,
   },
 ]
 
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes,
 })
+
+router.beforeEach((to, from, next) => {
+  const publicPages = ['/login'];
+  const authRequired = !publicPages.includes(to.path);
+  const loggedIn = localStorage.getItem('user');
+
+  if (authRequired && !loggedIn) {
+    next('/login');
+  } else {
+    next();
+  }
+});
 
 export default router

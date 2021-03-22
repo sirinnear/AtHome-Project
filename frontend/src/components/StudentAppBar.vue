@@ -11,12 +11,12 @@
         dark
         class="white--text"
         v-if="authenticated"
-        to="/user">
+        to="/student">
       Certificates
     </v-btn>
     <RequestTransferDialog v-if="authenticated" />
     <v-spacer />
-    <v-row align="center" justify="center" no-gutters>
+    <v-row align="center" justify="center" no-gutters v-if="authenticated">
       <v-spacer />
       <v-col cols="1">
         <v-avatar>
@@ -26,10 +26,10 @@
         </v-avatar>
       </v-col>
       <v-col>
-        <span class="white--text">John Lee</span>
+        <span class="white--text">{{ name }}</span>
       </v-col>
     </v-row>
-    <v-btn text dark v-if="authenticated" to="/login">
+    <v-btn text dark v-if="authenticated" @click="logout">
       Logout
       <v-icon
           dark
@@ -42,11 +42,28 @@
 </template>
 
 <script>
-import RequestTransferDialog from "@/views/user/RequestTransferDialog";
+import RequestTransferDialog from "@/views/student/RequestTransferDialog";
+import api from '../services';
+
 export default {
   name: "AppBar",
   components: {RequestTransferDialog},
-  props: ['authenticated', 'current']
+  props: ['authenticated'],
+  data () {
+    return {
+      name: '',
+    }
+  },
+  methods: {
+    logout() {
+      api.logout();
+      this.$router.push('/login');
+    }
+  },
+  mounted() {
+    const user = JSON.parse(localStorage.getItem('user'));
+    this.name = user.name;
+  }
 }
 </script>
 
