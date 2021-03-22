@@ -28,3 +28,9 @@ Succesfully Start Fabric and Depoly Chaincode.
 Total setup execution time : $(($(date +%s) - starttime)) secs ...
 
 EOF
+
+cd backend
+
+yarn install
+
+yarn start
